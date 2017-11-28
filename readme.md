@@ -24,12 +24,11 @@ output image:
 
 ##Color Space Conversion
 
-color2.py and hsl.py are for color space conversion
+LAB.py and HSL.py are for color space conversion
 
-color2.py includes conversion between rgb and lab
+LAB.py includes conversion between rgb and lab
 
-hsl.py includes conversion between rgb and hsl
+HSL.py includes conversion between rgb and hsl
 
 More details can be seen in [ruozhichen\\rgb2Lab-rgb2hsl](https://github.com/ruozhichen)
 
-Code names may be different from the link, but they are just same in fact.

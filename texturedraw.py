@@ -86,16 +86,15 @@ def main2(sourcefile,texturefile,targetfile1,targetfile2):
     t.texturingOnSource_Lab(targetfile1)
     t.texturingOnSource_hsl(targetfile2)
 
-    
-def main(sourcefile,texturefile,targetfile)
+def main(sourcefile,texturefile,targetfile):
     t=Texturing(sourcefile,texturefile)
     t.texturingOnSource_Lab(targetfile)
 
 if __name__ == "__main__":
     #logging.basicConfig(level=logging.DEBUG, format="%(levelname)s: %(message)s")
     #start=time.time()
-    
-    main(sys.argv[1:])
+    print sys.argv
+    main(sys.argv[1],sys.argv[2],sys.argv[3])
     
     '''
     imgfile="people1"
