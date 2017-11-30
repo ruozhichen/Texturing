@@ -30,5 +30,5 @@ LAB.py includes conversion between rgb and lab
 
 HSL.py includes conversion between rgb and hsl
 
-More details can be seen in [ruozhichen\\rgb2Lab-rgb2hsl](https://github.com/ruozhichen)
+More details can be seen in [ruozhichen\\rgb2Lab-rgb2hsl](https://github.com/ruozhichen/rgb2Lab-rgb2hsl)
 
