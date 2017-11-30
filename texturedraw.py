@@ -21,8 +21,7 @@ class Texturing(object):
         #super(Texturing, self).__init__()
         self.source = scipy.misc.imread(sourcefile)   # png
         self.texture = scipy.misc.imread(texturefile)   # jpg or png both ok
-        #self.isPng = FLAGS.image_file.lower().endswith('png')
-        #self.text_scale_adjust()
+        #self.text_scale_adjust()  # 先从texture裁剪出和source相同比例尺寸的区域，再进行缩放
 
     '''
         由于纹理图的比例不一定和原图相同，导致缩放的话纹理会被拉长或缩短造成失真，所以得先从纹理图中取出合适比例的区域作为纹理参考，之后再进行缩放至原图大小
@@ -42,7 +41,7 @@ class Texturing(object):
             tmp=np.zeros((height,width,3),dtype='int')
             gap=(self.texture.shape[1]-width)/2
             tmp[:,:,:]=self.texture[0:height,gap:gap+width,0:3]  # 取中心区域
-        self.texture_cut=tmp
+        self.texture=tmp
     '''
     based Lab color space
     source's L + textures's ab channel + source's alpha channel -> new img with texture
